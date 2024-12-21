@@ -1,5 +1,5 @@
 import styles from "./HomeQuestionSection.module.scss";
-
+import FaqAccordion from "../shared/FaqAccordion";
 export default function QuestionSection() {
   return (
     <section className={styles.questionSection}>
@@ -10,6 +10,8 @@ export default function QuestionSection() {
           Everything you need to know about the product and billing.
         </p>
       </div>
+
+      <FaqAccordion />
 
       <div
         className={`accordion accordion-flush ${styles.accordion}`}

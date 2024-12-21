@@ -1,0 +1,50 @@
+@use "../../styles/variables/font" as font;
+
+.faqAccordionContainer {
+
+    .faqAccordion {
+        max-width: 720px;
+        padding: 12px;
+        font-family: font.$primary-font;
+
+
+        .accordionContent {
+            margin-top: 16px;
+            max-width: 650px;
+
+
+        }
+
+        .faqSummary {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            list-style: none;
+            font-family: font.$secondary-font;
+            font-size: 1.25rem;
+
+            .faqQuestion {
+                margin-bottom: 0;
+            }
+
+
+            .toggleIcon {
+                display: inline-block;
+                margin-left: auto;
+                transition: 200ms ease-out;
+            }
+        }
+
+        &[open] {
+
+
+            .faqSummary {
+                .toggleIcon {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+}

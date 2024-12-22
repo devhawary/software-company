@@ -11,8 +11,6 @@ export default function QuestionSection() {
         </p>
       </div>
 
-      <FaqAccordion />
-
       <div
         className={`accordion accordion-flush ${styles.accordion}`}
         id="accordionFlush"

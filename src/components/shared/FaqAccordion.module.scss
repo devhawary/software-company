@@ -24,6 +24,11 @@
             font-family: font.$secondary-font;
             font-size: 1.25rem;
 
+            @media screen and (max-width: 450px) {
+                font-size: 1rem;
+                
+            }
+
             .faqQuestion {
                 margin-bottom: 0;
             }
@@ -47,4 +52,9 @@
         }
     }
 
+}
+
+.primayStyle details:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0;
+ 
 }

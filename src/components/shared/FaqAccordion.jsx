@@ -3,7 +3,10 @@ import styles from "./FaqAccordion.module.scss";
 export default function FaqAccordion() {
   return (
     <div className={`${styles.faqAccordionContainer}  ${styles.primayStyle}`}>
-      <details name="faq" className={styles.faqAccordion}>
+      <details
+        name="faq"
+        className={`${styles.faqAccordion} ${styles.primayStyle}`}
+      >
         <summary className={styles.faqSummary}>
           <p className={styles.faqQuestion}>
             Do I need to know about how to code?

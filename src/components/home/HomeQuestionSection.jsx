@@ -10,12 +10,9 @@ export default function QuestionSection() {
           Everything you need to know about the product and billing.
         </p>
       </div>
-      <div
-        className={`accordion accordion-flush ${styles.accordion}`}
-        id="accordionFlush"
-      >
+   
         <FaqAccordion />
-      </div>
+ 
       <div className={styles.questionCard}>
         <div className="images">
           <img

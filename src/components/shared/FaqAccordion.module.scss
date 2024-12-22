@@ -1,7 +1,7 @@
 @use "../../styles/variables/font" as font;
 
-.faqAccordionContainer {
 
+.faqAccordionContainer {
     .faqAccordion {
         max-width: 720px;
         padding: 12px;
@@ -26,7 +26,7 @@
 
             @media screen and (max-width: 450px) {
                 font-size: 1rem;
-                
+
             }
 
             .faqQuestion {
@@ -51,10 +51,15 @@
             }
         }
     }
-
 }
 
-.primayStyle details:not(:last-child) {
-    border-bottom: 1px solid #e0e0e0;
- 
+
+.primayStyle {
+
+    margin: 0 auto;
+    max-width: 700px;
+
+    details:not(:last-child) {
+        border-bottom: 1px solid #e0e0e0;
+    }
 }

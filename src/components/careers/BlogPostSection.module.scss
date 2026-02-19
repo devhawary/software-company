@@ -1,0 +1,37 @@
+@use "../../styles/variables/color" as color;
+@use "../../styles/variables/font" as font;
+
+/* Start blog_posts Hero*/
+
+.section {
+  padding-block: 4rem;
+  font-family: font.$primary-font
+}
+
+.blog_posts {
+  background-color: color.$tertiary-color;
+  text-align: center;
+
+  .container {
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      letter-spacing: -2px;
+      padding-block: 3rem;
+      font-weight: bold;
+    }
+
+    .cards {
+      margin-bottom: 30px;
+    }
+
+    a.view {
+      text-align: center;
+      color: color.$quaternary-color;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
+
+/* End blog_posts Hero*/

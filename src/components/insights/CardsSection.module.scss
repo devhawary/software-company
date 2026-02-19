@@ -1,0 +1,30 @@
+@use "../../styles/variables/color" as color;
+@use "../../styles/variables/font" as font;
+
+.card-style {
+  background-color: color.$tertiary-color;
+  position: relative;
+
+  .badge-style {
+    position: absolute;
+    top: 23px;
+    left: 23px;
+  }
+
+  .rounded-avatar {
+    height: 24px;
+    width: 24px;
+  }
+
+  .hover-effect {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05) translateY(-2px);
+    }
+  }
+}
+
+.green-bg {
+  background-color: color.$quaternary-color;
+}

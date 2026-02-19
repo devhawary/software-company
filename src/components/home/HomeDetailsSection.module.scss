@@ -1,0 +1,147 @@
+@use "../../styles/variables/color" as color;
+@use "../../styles/variables/font" as font;
+
+.detailsSection {
+    background-color: color.$tertiary-color;
+
+    @media screen and (min-width: 1950px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detailsPrimaryContent {
+        display: flex;
+
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 32px;
+
+        @media screen and (min-width: 500px) and (max-width: 1550px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .detailsMainImage {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .detailsContentContainer {
+            padding: 64px;
+            max-width: 900px;
+            flex: 1 1 550px;
+
+            @media screen and (max-width: 750px) {
+                padding: 32px;
+            }
+
+            h3 {
+                font-family: font.$tertiary-font;
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+
+            .accordionBody,
+            .accordionButton {
+                background-color: color.$tertiary-color;
+
+
+            }
+
+            .accordionButton {
+                font-family: font.$secondary-font;
+                font-weight: 500;
+                font-size: 1.5rem;
+                box-shadow: none;
+            }
+
+            .accordionIcon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-inline-end: 8px;
+                width: 40px;
+                height: 40px;
+                padding: 8px;
+                border-radius: 50%;
+                background-color: color.$quaternary-color;
+
+            }
+        }
+    }
+
+    .detailsSecondaryContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 32px;
+        max-width: 1900px;
+
+        @media screen and (min-width: 500px) and (max-width: 1550px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: -50px;
+        }
+
+        .detailsContentContainer {
+            padding: 112px;
+            max-width: 900px;
+            flex: 1 1 500px;
+
+            @media screen and (max-width: 750px) {
+                padding: 32px;
+            }
+
+            h3 {
+                font-family: font.$tertiary-font;
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+
+            p {
+                margin-bottom: 16px;
+            }
+
+            .featuresList {
+                margin-top: 32px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .featuresListCard {
+                    .featureIcon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 16px;
+                        width: 50px;
+                        height: 50px;
+                        padding: 8px;
+                        border-radius: 50%;
+                        background-color: color.$quaternary-color;
+                    }
+
+                    h4 {
+                        font-family: font.$tertiary-font;
+                    }
+
+                    p {
+                        max-width: 320px;
+                    }
+
+
+                }
+
+            }
+        }
+
+        .detailsSecondaryImage {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    }
+}

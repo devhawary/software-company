@@ -1,0 +1,80 @@
+ @use "../../styles/variables/color" as color;
+ @use "../../styles/variables/font" as font;
+ @use "../../styles/variables/textCards";
+
+
+
+
+ .featuresSection {
+     margin: 64px 0 64px 0;
+
+     .featuresSectionIntro {
+         @extend %PrimaryTextCard;
+
+         .icon {
+             border: 1px solid #eeecec;
+             border-radius: 24px;
+         }
+
+         h2 {
+             font-size: 3rem;
+         }
+     }
+
+     .featuresList {
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+         flex: 1 1 100%;
+         margin: 0 auto;
+         max-width: 1440px;
+
+         .featureCard {
+             font-family: font.$primary-font;
+             padding: 32px;
+             border-radius: 4px;
+
+             &:nth-child(even) {
+                 background: linear-gradient(color.$primary-color,
+                         color.$tertiary-color );
+             }
+
+             .featureCardIcon {
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 margin-bottom: 32px;
+                 width: 50px;
+                 padding: 12px;
+                 border-radius: 12px;
+                 background-color: color.$quaternary-color;
+             }
+
+             p {
+                 @media screen and (min-width: 780px) {
+                     max-width: 320px;
+                 }
+             }
+
+             a {
+                 text-decoration: none;
+                 color: color.$quaternary-color;
+                 font-size: 1rem;
+             }
+         }
+     }
+
+     .featuresSectionOutro {
+         @extend %PrimaryTextCard;
+
+         .demoBtn {
+             @extend %secondaryButton;
+             margin-right: 8px;
+         }
+
+         .trialBtn {
+             @extend %primaryButton;
+
+         }
+     }
+ }

@@ -1,0 +1,130 @@
+@use "./color" as color;
+@use "./font" as font;
+@use "./buttons";
+
+
+%PrimaryTextCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 0;
+    padding: 8px;
+    text-align: center;
+
+    .icon {
+        font-family: font.$primary-font;
+        color: color.$quaternary-color;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 4px 24px;
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        font-family: font.$tertiary-font;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 16px;
+
+    }
+
+    .description {
+        font-size: 1.25rem;
+        max-width: 800px;
+        text-align: center;
+    }
+}
+
+
+%pricingCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: color.$tertiary-color;
+    padding: 56px 64px 56px 64px;
+    border-radius: 16px;
+    max-width: 500px;
+
+    .label {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        color: color.$quaternary-color;
+        font-family: font.$tertiary-font;
+        font-size: 1.25rem;
+        font-weight: bold;
+        padding: 4px 16px;
+        border-radius: 8px;
+    }
+
+    .title {
+        color: color.$quaternary-color;
+        font-family: font.$tertiary-font;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+
+    .price {
+        font-family: font.$tertiary-font;
+        font-size: 3.5rem;
+        font-weight: bold;
+        margin-bottom: 16px;
+
+        .month {
+            font-size: 2rem;
+        }
+    }
+
+    .description {
+        font-size: 1.25rem;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .pricingBtn {
+        @extend %primaryButton;
+        margin-bottom: 16px;
+        padding: 12px;
+        width: 100%;
+
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    .featuresList {
+        align-self: flex-start;
+        margin-top: 16px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        font-size: 1.1rem;
+        font-family: font.$secondary-font;
+
+
+    }
+}
+
+
+
+%secondaryCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin: 32px auto;
+    text-align: center;
+    background-color: color.$tertiary-color;
+    align-items: center;
+    padding: 48px 40px;
+    border-radius: 16px;
+    max-width: 1000px;
+}

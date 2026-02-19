@@ -1,0 +1,23 @@
+// Correct font variable names
+$primary-font: 'Graphik-Regular', sans-serif;
+$secondary-font: 'Graphik-Medium', sans-serif;
+$tertiary-font: 'Graphik-Semibold', sans-serif;
+
+// Define font-faces with different names
+@font-face {
+    font-family: 'Graphik-Regular';
+    src: url('/fonts/Graphik-Regular.otf') format('opentype');
+
+}
+
+@font-face {
+    font-family: 'Graphik-Medium';
+    src: url('/fonts/Graphik-Medium.otf') format('opentype');
+
+}
+
+@font-face {
+    font-family: 'Graphik-Semibold';
+    src: url('/fonts/Graphik-Semibold.otf') format('opentype');
+
+}

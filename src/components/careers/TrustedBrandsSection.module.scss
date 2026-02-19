@@ -1,0 +1,31 @@
+@use "../../styles/variables/color" as color;
+@use "../../styles/variables/font" as font;
+
+/* Start trusted_brands Hero*/
+
+.section {
+  padding-block: 4rem;
+  font-family: font.$primary-font
+}
+
+.trusted_brands {
+  margin-inline: auto;
+
+  .container {
+    justify-items: center;
+
+    .row {
+      justify-content: center;
+
+      img {
+        &:first-of-type {
+          width: 60px;
+        }
+
+        width: 150px;
+      }
+    }
+  }
+}
+
+/* End trusted_brands Hero*/

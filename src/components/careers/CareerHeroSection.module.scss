@@ -1,0 +1,55 @@
+@use "../../styles/variables/color" as color;
+@use "../../styles/variables/font" as font;
+
+/* Start Career Hero*/
+.section {
+  padding-block: 4rem;
+}
+
+.careers {
+  background: linear-gradient(white, #F5EEE9);
+  position: relative;
+  max-height: 826px;
+
+  .container {
+    .career-top {
+      max-width: 50rem;
+      margin: 0 auto;
+
+      h1 {
+        font-size: 3rem;
+        letter-spacing: -2px;
+        font-weight: bolder;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        opacity: 0.8;
+      }
+    }
+
+    .career-bottom {
+      overflow: hidden;
+      border-radius: 20px;
+
+      img {
+        max-width: 100%;
+        border-radius: 20px;
+        width: 75rem;
+        height: 37rem;
+        object-fit: cover;
+        max-height: 100%;
+
+        &:hover {
+          transform: scale(1.02);
+          transition: 0.3s ease-in-out all;
+        }
+
+      }
+    }
+  }
+}
+
+/* End Career Hero*/

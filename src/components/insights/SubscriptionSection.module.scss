@@ -1,0 +1,22 @@
+@use "../../styles/variables/color" as color;
+@use "../../styles/variables/font" as font;
+
+.news-letter {
+  background-color: color.$tertiary-color;
+
+  h2 {
+    font-family: "Graphik-Semibold", "sans-serif";
+    font-size: 2.5rem;
+  }
+
+  button {
+    background-color: color.$quaternary-color;
+  }
+
+  .subscription-form {
+    ::placeholder {
+      color: #999999;
+    }
+
+  }
+}

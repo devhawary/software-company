@@ -1,0 +1,35 @@
+ @use "../../styles/variables/textCards";
+ @use "../../styles/variables/buttons";
+
+ .teamSection {
+     .teamIntro {
+         @extend %PrimaryTextCard;
+
+         h2 {
+             font-size: 2.5rem;
+         }
+
+
+     }
+
+
+
+     .hiringCard {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin: 32px 0;
+         padding: 8px;
+
+         .hiringDescription {
+             text-align: center;
+             max-width: 400px;
+         }
+
+         .hiringBtn {
+             @extend %secondaryButton;
+             width: fit-content;
+             padding: 8px;
+         }
+     }
+ }

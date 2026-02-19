@@ -1,0 +1,117 @@
+@use "../../styles/variables/color" as color;
+@use "../../styles/variables/font" as font;
+
+
+.headerContentSection {
+    padding: 32px;
+    background: linear-gradient(color.$primary-color, color.$tertiary-color);
+
+    .headerIntro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 64px;
+        margin-top: 32px;
+
+        .headerIntroText {
+            max-width: 600px;
+
+            h1 {
+                font-family: font.$primary-font;
+                font-size: 4rem;
+                margin-bottom: 16px;
+
+                @media screen and (max-width: 500px) {
+                    font-size: 3rem;
+
+                }
+            }
+
+            .headerDescription {
+                max-width: 500px;
+                font-family: font.$primary-font;
+                font-size: 1.25rem;
+                margin-bottom: 24px;
+            }
+
+            .email {
+
+                height: 40px;
+                border: 1px solid #d8d8d8;
+                border-radius: 8px;
+                margin-bottom: 8px;
+                margin-right: 4px;
+                padding: 20px;
+            }
+
+            .getDemoBtn {
+                background-color: color.$quaternary-color;
+                color: color.$primary-color;
+                border: none;
+                border-radius: 8px;
+                padding: 8px 32px;
+            }
+
+
+
+            .userReviews {
+                .reviewerAvatars img {
+                    border-radius: 24px;
+                    margin-right: -20px;
+                }
+            }
+        }
+
+        .heroImgContainer {
+            position: relative;
+            width: fit-content;
+
+            .accountImg,
+            .countriesImg {
+                position: absolute;
+
+                @media screen and (max-width: 780px) {
+                    display: none;
+                }
+            }
+
+            .countriesImg {
+                top: 210px;
+                left: 50px;
+                transform: translate(-50%, -50%);
+            }
+
+            .accountImg {
+                bottom: 150px;
+                right: 50px;
+                transform: translate(50%, 50%);
+            }
+
+            .heroImg {
+                max-width: 100%;
+                border-radius: 16px;
+            }
+        }
+    }
+
+    .brands {
+        text-align: center;
+        margin-top: 64px;
+        margin-bottom: 32px;
+
+        .brandLogos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 80px;
+        }
+
+        p {
+            margin-bottom: 32px;
+            font-weight: 500;
+            font-size: 1.25rem;
+        }
+    }
+}

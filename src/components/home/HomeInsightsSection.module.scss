@@ -1,0 +1,65 @@
+ @use "../../styles/variables/color" as color;
+ @use "../../styles/variables/textCards";
+ @use "../../styles/variables/buttons";
+  
+  .insightsSection {
+      background-color: color.$tertiary-color;
+      padding: 32px 16px 64px 16px;
+
+      .introContainer {
+          width: 100%;
+          max-width: 1850px;
+          margin-inline: auto;
+          display: flex;
+          justify-content: space-around;
+          align-items: flex-end;
+          flex-wrap: wrap;
+
+          .insightsIntro {
+              @extend %PrimaryTextCard;
+              align-items: flex-start;
+              margin-bottom: 0;
+              padding-bottom: 0;
+
+              .icon {
+                  padding-inline-start: 0;
+              }
+
+              .description {
+                  margin-bottom: 0;
+              }
+          }
+
+          .postsBtn {
+              @extend %primaryButton;
+              margin-top: 8px;
+          }
+      }
+
+      .postsContainer {
+          margin-top: 32px;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 32px;
+
+          .postCard {
+              .postImg {
+                  border-radius: 12px;
+                  margin-bottom: 16px;
+                  max-width: 100%;
+              }
+
+              .postDescription {
+                  max-width: 400px;
+              }
+
+              .postLink {
+                  text-decoration: none;
+                  color: color.$quaternary-color;
+                  font-size: 1.1rem;
+                  font-weight: bold;
+              }
+          }
+      }
+  }

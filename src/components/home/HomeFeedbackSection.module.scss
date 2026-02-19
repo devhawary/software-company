@@ -1,0 +1,38 @@
+  @use "../../styles/variables/color" as color;
+  @use "../../styles/variables/font" as font;
+  @use "../../styles/variables/textCards";
+
+  .feedbacksection {
+      .feedbackCard {
+          @extend %secondaryCard;
+
+          .logo {
+              margin-bottom: 16px;
+          }
+
+          .qoute {
+              margin-bottom: 32px;
+              font-family: font.$secondary-font;
+              font-size: 1.25rem;
+              font-weight: bold;
+              max-width: 700px;
+          }
+
+          h6 {
+              font-family: font.$tertiary-font;
+              font-size: 1.5rem;
+              font-weight: bold;
+
+          }
+      }
+
+      a {
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+          text-decoration: none;
+          color: color.$quaternary-color;
+          font-size: 1.1rem;
+          font-weight: bold;
+      }
+  }

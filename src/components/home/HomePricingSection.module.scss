@@ -1,0 +1,41 @@
+ @use "../../styles/variables/font" as font;
+ @use "../../styles/variables/textCards";
+ @use "../../styles/variables/buttons";
+
+ .pricingSection {
+     padding: 8px;
+
+     .pricingSectionIntro {
+         @extend %PrimaryTextCard;
+     }
+
+     .pricingCardsContainer {
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+         gap: 32px;
+
+         .pricingPlanCard {
+             @extend %pricingCard;
+         }
+
+     }
+
+     .comparePlanContainer {
+
+         margin-top: 64px;
+         text-align: center;
+
+         .compareBtn {
+             @extend %secondaryButton;
+             width: 200px;
+             padding: 12px;
+         }
+
+         p {
+             margin-top: 16px;
+             font-family: font.$secondary-font;
+             font-size: 1rem;
+         }
+     }
+ }

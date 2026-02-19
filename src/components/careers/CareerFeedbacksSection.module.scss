@@ -1,0 +1,33 @@
+@use "../../styles/variables/color" as color;
+@use "../../styles/variables/font" as font;
+
+/* Start feedbacks Hero*/
+
+.section {
+  padding-block: 4rem;
+  font-family: font.$primary-font
+}
+
+.feedbacks {
+  text-align: center;
+
+  .container {
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      letter-spacing: -2px;
+      padding-bottom: 3rem;
+      font-weight: bold;
+
+    }
+
+    a {
+      text-align: center;
+      color: color.$quaternary-color;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
+
+/* End feedbacks Hero*/
